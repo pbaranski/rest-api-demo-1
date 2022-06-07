@@ -1734,24 +1734,6 @@
         "xml": {
           "name": "User"
         }
-      },
-      "Token": {
-        "type": "object",
-        "required": [
-          "token",
-          "validUntil"
-        ],
-        "properties": {
-          "token": {
-            "type": "string"
-          },
-          "validUntil": {
-            "type": "string"
-          }
-        },
-        "xml": {
-          "name": "Token"
-        }
       }
     }
   }
