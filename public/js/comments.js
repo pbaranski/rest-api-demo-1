@@ -54,10 +54,10 @@ async function issueGetRequest() {
 const getCommentHTML = (comment) => {
   return `<div>
         <label>article:</label></br><span><a href="article.html?id=${
-          comment.article.id
+          comment.article?.id
         }" id="gotoArticle${
-    comment.article.id
-  }">${comment.article.title?.substring(0, 50)} (...)</a></span><br>
+    comment.article?.id
+  }">${comment.article?.title?.substring(0, 50)} (...)</a></span><br>
         <label>user:</label><span><a href="user.html?id=${
           comment.user_id
         }" id="gotoUser${comment.user_id}-${comment.id}">${
@@ -80,10 +80,12 @@ const displayCommentsData = (data) => {
 };
 
 const displayItem = (item, container) => {
-  itemHTML = getCommentHTML(item);
-  container.innerHTML += `
-        <div class="card-wrapper">${itemHTML}</div>
-    `;
+  if (item !== undefined) {
+      itemHTML = getCommentHTML(item);
+      container.innerHTML += `
+            <div class="card-wrapper">${itemHTML}</div>
+        `;
+  }
 };
 
 issueGetRequest();
