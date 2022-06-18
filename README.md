@@ -26,7 +26,7 @@ Steps:
 Application will be available at `http://localhost:3000`
 
 ## Deploy to **Heroku**
-<a href="https://heroku.com/deploy?template=https://github.com/jaktestowac/rest-api-demo/tree/main">
+<a href="https://heroku.com/deploy?template=https://github.com/pbaranski/rest-api-demo-1/tree/do-not-merge-heroku-url">
     <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 
