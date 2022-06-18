@@ -39,6 +39,7 @@ async function issueGetRequest() {
 
 const attachEventHandlers = () => {
   document.querySelector("#add-new").onclick = () => {
+    window.scrollTo(0, 0);
     const container = document.querySelector(".add-new-panel");
     container.querySelector(".body").value = "";
     container.querySelector(".title").value = "";
