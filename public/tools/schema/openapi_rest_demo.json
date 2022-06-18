@@ -1544,6 +1544,12 @@
       },
       "ArticleUpdate": {
         "type": "object",
+        "required": [
+          "user_id",
+          "title",
+          "body",
+          "date"
+        ],
         "properties": {
           "user_id": {
             "oneOf": [
