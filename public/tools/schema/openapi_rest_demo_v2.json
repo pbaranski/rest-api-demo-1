@@ -1,8 +1,8 @@
 {
-  "openapi": "3.0.1",
+  "openapi": "3.0.2",
   "info": {
-    "title": "REST demo (v2 for JWT)",
-    "description": "This is a sample REST server form jaktestowac.pl.",
+    "title": "REST API Demo (v2 for JWT)",
+    "description": "This is a sample REST server form jaktestowac.pl team.",
     "termsOfService": "http://jaktestowac.pl/",
     "version": "1.0.0"
   },
