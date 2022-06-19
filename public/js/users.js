@@ -181,6 +181,7 @@ const attachEventHandlers = () => {
   }
   document.querySelector("#add-new").onclick = () => {
     const container = document.querySelector(".add-new-panel");
+    window.scrollTo(0, 0);
     container.querySelector(".firstname").value = "";
     container.querySelector(".lastname").value = "";
     container.querySelector(".email").value = "";
