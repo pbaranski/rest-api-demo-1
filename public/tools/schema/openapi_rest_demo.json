@@ -1,10 +1,10 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "REST API demo",
-    "description": "This is a sample REST server by jaktestowac.pl.",
+    "title": "REST API Demo",
+    "description": "This is a sample REST server form jaktestowac.pl team.",
     "termsOfService": "http://jaktestowac.pl/",
-    "version": "1.3.1"
+    "version": "1.3.3"
   },
   "externalDocs": {
     "description": "Find out more about Swagger",
@@ -1544,6 +1544,12 @@
       },
       "ArticleUpdate": {
         "type": "object",
+        "required": [
+          "user_id",
+          "title",
+          "body",
+          "date"
+        ],
         "properties": {
           "user_id": {
             "oneOf": [
@@ -1614,7 +1620,8 @@
           },
           "date": {
             "type": "string",
-            "format": "date"
+            "format": "date",
+            "example": "2024-06-30"
           }
         },
         "xml": {
@@ -1712,6 +1719,12 @@
       },
       "UserUpdate": {
         "type": "object",
+        "required": [
+          "email",
+          "firstname",
+          "lastname",
+          "avatar"
+        ],
         "properties": {
           "email": {
             "type": "string",
