@@ -40,6 +40,7 @@ async function issueGetRequest() {
 const attachEventHandlers = () => {
   document.querySelector("#add-new").onclick = () => {
     const container = document.querySelector(".add-new-panel");
+    window.scrollTo(0, 0);
     container.querySelector(".body").value = "";
     container.querySelector(".title").value = "";
     let index = 0;
