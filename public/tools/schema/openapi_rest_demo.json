@@ -1620,7 +1620,7 @@
           },
           "date": {
             "type": "string",
-            "format": "date"
+            "format": "date",
             "example": "2024-06-30"
           }
         },
