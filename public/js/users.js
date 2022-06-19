@@ -180,6 +180,7 @@ const attachEventHandlers = () => {
     elem.onclick = showEmailEditForm;
   }
   document.querySelector("#add-new").onclick = () => {
+    window.scrollTo(0, 0);
     const container = document.querySelector(".add-new-panel");
     window.scrollTo(0, 0);
     container.querySelector(".firstname").value = "";
