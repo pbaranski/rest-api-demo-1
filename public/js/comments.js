@@ -80,7 +80,7 @@ const displayCommentsData = (data) => {
 };
 
 const displayItem = (item, container) => {
-  if (item !== undefined) {
+  if (item !== undefined && item.article !== undefined) {
       itemHTML = getCommentHTML(item);
       container.innerHTML += `
             <div class="card-wrapper">${itemHTML}</div>

@@ -389,18 +389,12 @@ const attachEventHandlers = () => {
     elem.onclick = showEditNameForm;
   }
   document.querySelector("#add-new").onclick = () => {
+    window.scrollTo(0, 0);
     const container = document.querySelector(".add-new-panel");
     container.querySelector(".body").value = "";
-    // let index = 0;
-    // for(element of users)
-    // {
-    //    var opt = document.createElement("option");
-    //    opt.value = element.id;
-    //    opt.innerHTML = `${element.firstname} ${element.lastname}`;
-
-    //    container.querySelector('.user').appendChild(opt);
-    //    index++;
-    // }
+    container.querySelector("#email").value = "";
+    container.querySelector("#pass").value = "";
+    container.querySelector("#body").value = "";
     container.classList.add("active");
   };
   document.querySelector(".close").onclick = () => {
